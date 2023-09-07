@@ -50,7 +50,5 @@ public class WordManager {
                 wordCRUD.listAll();
             }
         }
-
-        //System.out.println(menu);
     }
 }
