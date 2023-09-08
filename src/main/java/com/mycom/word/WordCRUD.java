@@ -51,6 +51,7 @@ public class WordCRUD implements ICRUD{
         }
         System.out.println("-------------------------------");
     }
+
     public ArrayList<Integer> listAll(String keyword){
         ArrayList<Integer> idlist = new ArrayList<>();
         int j = 0 ;

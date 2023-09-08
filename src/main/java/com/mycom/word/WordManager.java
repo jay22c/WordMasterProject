@@ -37,7 +37,6 @@ public class WordManager {
                 + "********************\n"
                 + " => 원하는 메뉴는? ");
         return s.nextInt();
-        //int menu = s.nextInt();
     }
     public void start() {
         while(true){
