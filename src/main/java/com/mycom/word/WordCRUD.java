@@ -122,6 +122,7 @@ public class WordCRUD implements ICRUD{
     }
 
     public void loadFile() {
+
         try {
             BufferedReader br = new BufferedReader(new FileReader(fname));
             String line;
@@ -154,6 +155,7 @@ public class WordCRUD implements ICRUD{
     }
 
     public void saveFile()  {
+
         try {
             PrintWriter pr = new PrintWriter(new FileWriter(fname));
             for(Word one : list){
@@ -164,12 +166,15 @@ public class WordCRUD implements ICRUD{
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+
     }
 
     public void searchLevel() {
+
         System.out.print("=> 원하는 레벨은? (1~3) ");
         int level = s.nextInt();
         listAll(level) ;
+
     }
 
     public void searchWord() {
