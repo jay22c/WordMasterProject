@@ -140,10 +140,7 @@ public class WordCRUD implements ICRUD{
                     list.add(new Word(0,level,word,meaning));
                     count++;
                 }
-
             }
-
-
             br.close();
             System.out.println("==> " + count + "개 로딩 완료!!!");
         }catch (FileNotFoundException e) {
@@ -151,7 +148,6 @@ public class WordCRUD implements ICRUD{
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
     }
 
     public void saveFile()  {
